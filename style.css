@@ -1,0 +1,49 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+body {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+h1 {
+  color: rgb(102, 100, 100);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px;
+  margin: 20px;
+}
+
+#grid-container {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  width: 550px;
+  height: 550px;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+
+.grid-item {
+  border: 1px solid rgb(105, 103, 103);
+}
+
+.my-color-class {
+  background-color: #3882f6;
+}
+
+#reset {
+  text-align: center;
+  margin: 12px;
+  width: 98px;
+  height: 42px;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: #3882f6;
+  color: #e5e7eb;
+}
